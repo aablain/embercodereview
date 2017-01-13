@@ -1,0 +1,10 @@
+<h1>{{question.note}}</h1>
+<h4>{{question.author}}</h4>
+<p>{{question.content}}</p>
+
+<h5>Answers:</h5>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
